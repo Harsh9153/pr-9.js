@@ -1,0 +1,191 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>HRD</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+<style>
+    .signin .content .form .inputBox button[type="submit"] {
+        padding: 10px;
+        background: #0f0;
+        color: #000;
+        font-weight: 600;
+        font-size: 1.35em;
+        letter-spacing: 0.05em;
+        cursor: pointer;
+
+    }
+</style>
+
+<body> <!-- partial:index.partial.html -->
+
+    <section> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+        <span></span> <span></span> <span></span> <span></span> <span></span>
+
+        <div class="signin">
+
+            <div class="content">
+
+                <h2>Sign In</h2>
+
+                <div class="form">
+
+                    <div class="inputBox">
+
+                        <input type="text" id="username" required> <i>Username</i>
+
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="email" name="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"> <i>Email</i>
+
+
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="password" required id="password"> <i> password</i>
+                        <p id="err4"></p>
+
+                    </div>
+
+                    <div class="inputBox">
+
+                        <input type="password" required id="cnfrm-password"> <i>Confome Password</i>
+
+                    </div>
+                    <p id="message"></p>
+
+                    <div class="links"> <a href="login.html">Forgot Password</a> <a href="#">Signup</a>
+
+                    </div>
+
+                    <div class="inputBox">
+
+                        <!-- <input type="submit"  onclick="submit()"> -->
+                        <button type="submit" onclick="submit()" value="Login"><a href="login.html">submit</a></button><br><br>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section> <!-- partial -->
+
+
+    <script>
+        let arr = JSON.parse(localStorage.getItem("data")) || []
+        function submit() {
+            let username = document.getElementById("username").value
+            let email = document.getElementById("email").value
+            let password = document.getElementById("password").value
+            let cnfrmPassword = document.getElementById("cnfrm-password").value;
+            let message = document.getElementById("message");
+            let tbody = document.getElementById("tbody")
+
+            if(username<6)
+            {
+                alert("username length must be atleast 8 characters");
+
+            }
+            if (password.length < 8) {
+                //    let p= document.getElementById("error").innerHTML="correct password"
+                alert("Password length must be atleast 8 characters");
+                // document.getElementById("err").innerHTML = "please enter username"
+                // document.getElementById("err").style.color = "red"
+
+
+            }
+            if (password.length > 16) {
+                //    let p= document.getElementById("error").innerHTML="correct password"
+                alert("Password length must not exceed 16 characters");
+                // document.getElementById("err").innerHTML = "Password length must not exceed 15 characters"
+                // document.getElementById("err").style.color = "red"
+
+
+            }
+            else {
+
+
+                let obj = {
+                    username,
+                    email,
+                    password,
+                }
+
+                arr.push(obj)
+                localStorage.setItem("data", JSON.stringify(arr))
+                console.log(obj);
+                location.reload();
+            }
+
+         
+
+        }
+
+
+        // function loddata() {
+        //     arr.map((val, index) => {
+        //         let tr = document.createElement("tr")
+        //         tr.innerHTML = `
+        //         <td>${val.username}</td>
+        //         <td>${val.Email}</td>
+        //         <td>${val.password}</td> `;
+        //         tbody.appendChild(tr)
+
+        //     });
+
+        // }
+        // loddata();
+
+
+
+    </script>
+
+
+</body>
+
+</html>
